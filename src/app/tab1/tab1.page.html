@@ -1,0 +1,29 @@
+<ion-content class="ion-padding">
+  <ion-img src="data:image/png;{{logo}}" style="height: 12rem; width: 12rem; margin: 10px auto;">
+  </ion-img>
+
+  <ion-list>
+      <ion-item>
+          <ion-label position="fixed"><h1>JUL</h1></ion-label>
+          <ion-label>  
+              <p  (click)="meus_servicos()" style="color:#0e3640;"> <ion-icon name="receipt-outline"></ion-icon>&nbsp;Meus serviços</p>
+              <h3>Valor: R$ 600</h3>
+              <h3>Vencimento: 10/07/2020</h3>
+              <h3>Fatura em Aberto</h3>
+              <p style="color:#0e3640;"> <ion-icon name="download-outline"></ion-icon>&nbsp;Download Fatura</p>
+          </ion-label>
+        </ion-item>
+      <ion-item>
+        <ion-label position="fixed"><h1>JUN</h1></ion-label>
+        <ion-label>
+          <p  (click)="meus_servicos()" style="color:#0e3640;"> <ion-icon name="receipt-outline"></ion-icon>&nbsp;Meus serviços</p>
+          <h3>Valor: R$ 700</h3>
+          <h3>Vencimento: 10/06/2020</h3>
+          <h3>Fatura Paga</h3>
+        </ion-label>
+      </ion-item>
+  </ion-list>
+  <ion-button color="dark" style="border-radius: 50%; height: 3rem; width: 13rem; margin-left: auto;  margin-right: auto;display: block !important;" (click)="solicitar()">
+      <ion-icon name="add-outline"></ion-icon>&nbsp;Solicitar Serviço
+  </ion-button>
+</ion-content>

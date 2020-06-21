@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Detalhes do Serviço
+
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-content class="ion-padding">
+    <ion-list *ngIf="this.servico != null">
+        <ion-list-header text-center>
+            <h1 style="text-align:center;margin: 16px auto !important;"> {{ servico }} </h1>
+        </ion-list-header>
+        <ion-item>
+            <ion-label>
+                
+            </ion-label>
+        </ion-item>
+        <ion-list-header text-center>
+          Só pra agilizar um pouco, marque a opção mais parecida com a demanda
+        </ion-list-header>
+        <ion-item>
+          <ion-label position="fixed" (click) = "marcar_opcao()"><ion-checkbox checked="false"></ion-checkbox></ion-label>
+          <ion-label>
+              <h3>Um Cerômero</h3>
+          </ion-label>
+        </ion-item>
+        <ion-item>
+            <ion-label position="fixed" (click) = "marcar_opcao()"><ion-checkbox checked="false"></ion-checkbox></ion-label>
+            <ion-label>
+                <h3>Uma Porcelana</h3>
+            </ion-label>
+          </ion-item>
+          <ion-item>
+          <ion-label position="fixed" (click) = "marcar_opcao()"><ion-checkbox checked="false"></ion-checkbox></ion-label>
+            <ion-label>
+                <h3>Nenhuma opção</h3>
+            </ion-label>
+          </ion-item>
+    </ion-list>
+
+  
+    <ion-button color="dark" style="border-radius: 50%; height: 3rem; width: 10rem; margin-left: auto;  margin-right: auto;display: block !important;" (click)="confirma()">
+        <ion-icon name="checkmark-done-outline"></ion-icon>Confirmar
+    </ion-button>
+
+</ion-content>

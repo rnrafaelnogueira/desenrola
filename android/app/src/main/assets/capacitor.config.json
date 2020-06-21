@@ -1,0 +1,10 @@
+{
+  "appId": "io.ionic.demo.pg.cap.ng",
+  "appName": "Desenrola",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www",
+  "cordova": {},
+  "linuxAndroidStudioPath": "/home/rafaelnogueira/android-studio/bin/studio.sh"
+
+}
